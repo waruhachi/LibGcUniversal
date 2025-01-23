@@ -27,8 +27,9 @@ Run the `install.sh` script in this repository to automatically copy the necessa
 1. Download this repository
 2. Copy the `libgcuniversal.tbd` into your `theos/lib` folder.
 3. Copy the `libgcuniversalrootless.tbd` to `theos/lib/iphone/rootless` and rename it to `libgcuniversal.tbd`.
-3. Put the `GcUniversal` folder into your `theos/include` folder.
-4. Done!
+4. Copy the `libgcuniversalroothide.tbd` to `theos/lib/iphone/roothide` and rename it to `libgcuniversal.tbd`.
+5. Put the `GcUniversal` folder into your `theos/include` folder.
+6. Done!
 
 ## Project configuration
 1. Add `TWEAKNAME_LIBRARIES = gcuniversal` to your makefiles (not needed if you only use one of the social cells for example)

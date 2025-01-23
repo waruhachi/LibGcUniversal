@@ -15,8 +15,10 @@ set -v
 # Copy the dynamic libraries
 rm -f "$THEOS/lib/libgcuniversal.dylib"
 mkdir -p "${THEOS}/lib/iphone/rootless"
+mkdir -p "${THEOS}/lib/iphone/roothide"
 cp GcUniversal/libgcuniversal.tbd "${THEOS}/lib/"
 cp GcUniversal/libgcuniversalrootless.tbd "${THEOS}/lib/iphone/rootless/libgcuniversal.tbd"
+cp GcUniversal/libgcuniversalroothide.tbd "${THEOS}/lib/iphone/roothide/libgcuniversal.tbd"
 
 # Copy the header files
 mkdir -p "${THEOS}/include/GcUniversal"

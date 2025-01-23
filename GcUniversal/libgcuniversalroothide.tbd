@@ -1,0 +1,13 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios, arm64e-ios ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@loader_path/.jbroot/usr/lib/libgcuniversal.dylib'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ _UIImageHEICRepresentation, _isHEICSupported, _logToFile ]
+    objc-classes:    [ GcColorPickerCell, GcColorPickerUtils, GcDuoTwitterCell, GcImagePickerCell,
+                       GcImagePickerUtils, GcSocialCell, GcSymbolPickerCell, GcTwitterCell ]
+...
